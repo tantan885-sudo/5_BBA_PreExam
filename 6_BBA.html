@@ -101,7 +101,8 @@ button,a{touch-action:manipulation}
 
 <script>
 const DATA_URL='https://raw.githubusercontent.com/tantan885-sudo/5_BBA_PreExam/refs/heads/main/fundamental_nursing_489.json';
-const CACHE_KEY='mcq_questions_cache',STORAGE_KEY='mcq_learned_questions',BOOKMARK_KEY='mcq_bookmarked_questions';
+const TEST_ID='fundamental_nursing_489';
+const CACHE_KEY=`mcq_questions_cache:${TEST_ID}`,STORAGE_KEY=`mcq_learned_questions:${TEST_ID}`,BOOKMARK_KEY=`mcq_bookmarked_questions:${TEST_ID}`;
 const KEYS='ABCDEFGH';
 let myQuestions=[],currentQueue=[],wrongQuestionsInSession=[],shown=[],activeQuestion=null;
 let currentMode='learn',initialCardCount=0,score=0,isAnswering=false;
