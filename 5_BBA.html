@@ -101,7 +101,7 @@ button,a{touch-action:manipulation}
 
 <script>
 const DATA_URL='https://raw.githubusercontent.com/tantan885-sudo/5_BBA_PreExam/refs/heads/main/adult_nursing_473.json';
-const TEST_ID='adult_nursing_473';
+const TEST_ID=`${location.pathname}:${DATA_URL}`;
 const CACHE_KEY=`mcq_questions_cache:${TEST_ID}`,STORAGE_KEY=`mcq_learned_questions:${TEST_ID}`,BOOKMARK_KEY=`mcq_bookmarked_questions:${TEST_ID}`;
 const KEYS='ABCDEFGH';
 let myQuestions=[],currentQueue=[],wrongQuestionsInSession=[],shown=[],activeQuestion=null;
